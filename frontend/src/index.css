@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;600;800&display=swap');
+
+:root {
+  /* Defense/Enterprise Palette */
+  --bg-main: #000000;
+  --bg-panel: #0a0a0a;
+  --bg-panel-hover: #171717;
+  
+  --text-main: #e5e5e5;
+  --text-muted: #737373;
+  
+  --accent-cyan: #38bdf8;
+  --accent-cyan-glow: transparent;
+  
+  --status-normal: #10b981;
+  --status-normal-glow: transparent;
+  
+  --status-warning: #f59e0b;
+  --status-warning-glow: transparent;
+  
+  --status-critical: #ef4444;
+  --status-critical-glow: rgba(239, 68, 68, 0.1); /* Very subtle if any */
+  
+  --status-cooling: #60a5fa;
+  --status-cooling-glow: transparent;
+  
+  --status-shutdown: #404040;
+
+  --border-subtle: #262626;
+  --border-focus: #52525b;
+  
+  --font-body: 'JetBrains Mono', monospace;
+  --font-heading: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* Military grid background */
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.5px;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-focus);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
