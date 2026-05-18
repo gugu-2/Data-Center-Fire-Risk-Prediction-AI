@@ -65,5 +65,8 @@ Nexus Core is a highly advanced, defense-inspired AI data center monitoring syst
 - **Deep Vision Analysis**: From the side panel, click `DEEP ANALYZE` to transition into the full-screen optical and thermal AI analysis view.
 - **Manual Overrides**: Use the `INITIATE PRECISION COOLING` or `EMERGENCY SHUTDOWN` buttons to manually intervene and mitigate thermal runaways.
 
+
+### Email me on majipritam47@gmail.com For any enquiry
+
 ## Vision Assets
 The frontend `public` directory contains the high-fidelity mock camera feeds (`thermal_cam.png` and `security_cam.png`) utilized by the Deep Vision module to simulate live AI analysis.
